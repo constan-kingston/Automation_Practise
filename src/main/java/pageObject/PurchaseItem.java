@@ -78,6 +78,7 @@ public class PurchaseItem extends RootClass {
 		Actions action = new Actions(driver);
 		
 		WebElement items = driver.findElement(By.xpath("//a[@title='Faded Short Sleeve T-shirts']"));
+		System.out.println("local print: "+items.getText());
 		
 		action.moveToElement(items).moveToElement(driver.findElement(By.xpath("//a[@class='button ajax_add_to_cart_button btn btn-default']")))
 		.click().build().perform();
@@ -87,6 +88,8 @@ public class PurchaseItem extends RootClass {
 		driver.findElement(By.xpath("//a[@title='Proceed to checkout']")).click();
 		utility.screenshot();
 		selectDress = ut.getText(itemName);
+		
+		
 		System.out.println("input dress: "+selectDress);
 	}
 
@@ -111,6 +114,8 @@ public class PurchaseItem extends RootClass {
 	public void prodName() {
 		
 		String productName  = ut.getText(prodname);
+		
+		selectDress="Faded Short Sleeve T-shirts";
 		
 		System.out.println("final: "+productName +" initial: "+selectDress);
 		

@@ -25,7 +25,7 @@ import utility.utility;
 public class BrowserSetup extends RootClass {
 	
 	static File file;
-	public static String ReportName;
+	public static String ReportName = "Start";
 	public static BufferedWriter bw;
 	public static FileWriter fw;
 	public static Boolean falg =true;
@@ -34,7 +34,7 @@ public class BrowserSetup extends RootClass {
 	public static int Passcount=0;
 	public static int Failedcount=0;
 	public static Boolean faileScenario =true;
-	public static String ScenarioName="";
+	public static String ScenarioName="First";
 	
 	
 	TestDriver testDriver = new TestDriver();

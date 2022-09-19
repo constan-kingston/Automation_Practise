@@ -100,7 +100,7 @@ public class Registration extends RootClass {
 
 	public void enterDet(String first, String last, String password) throws InterruptedException {
 		
-		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
+		Thread.sleep(3000);
 		ut.setText(fname, first);
 		utility.screenshot();
 		Thread.sleep(2000);
@@ -140,9 +140,9 @@ public class Registration extends RootClass {
 	public void verifyLogin(String fname2, String lname2) {
 		
 		
-		//String loginName = ut.getText(username);
-		String loginName ="Faded Short Sleeve T-shirts initial";
-		String input = fname2+" mylname";
+		String loginName = ut.getText(username);
+		//String loginName ="Faded Short Sleeve T-shirts initial";
+		String input = fname2+lname2;
 		System.out.println("Username input: " + input);
 		utility.screenshot();
 		
@@ -155,6 +155,29 @@ public class Registration extends RootClass {
 			System.out.println("Condition failed");
 			Assert.assertTrue(false);
 		}
+	}
+
+	public void enterAddrDet() throws InterruptedException {
+		
+		ut.setText(companyname, "mycompany");
+		ut.setText(address1, "myaddress");
+		ut.setText(address2, "myaddr2");
+		ut.setText(cityname, "mycity");
+		utility.screenshot();
+		Thread.sleep(1000);
+		
+		//ut.setText(pcode, zip);
+		pcode.sendKeys("78425");
+		ut.getSelect(statename, "Arizona");
+		ut.setText(phoneno, "25485");
+		ut.setText(mobileno, "54885");
+		ut.setText(alias, "myaliasaddr");
+		utility.screenshot();
+		
+		Thread.sleep(2000);
+		
+		ut.click(register);
+		utility.screenshot();
 	}
 	
 	
