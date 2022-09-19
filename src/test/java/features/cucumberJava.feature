@@ -14,7 +14,7 @@ Scenario Outline:
 	
 	Examples:
 	|url|email|fname|lname|password|company|addr1|addr2|city|state|pcode|phone|mobile|
-	|https://automationpractice.com/index.php|test345work@abc.com|myfname|mylame|12345|mycompany|myaddr1|myaddr2|mycity|Arizona|12345|98452|32147|
+	|https://automationpractice.com/index.php|test3fgv545work@abc.com|myfname|mylame|12345|mycompany|myaddr1|myaddr2|mycity|Arizona|12345|98452|32147|
 
 
 @Signin_signout

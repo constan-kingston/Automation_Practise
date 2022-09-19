@@ -83,11 +83,12 @@ public class Registration extends RootClass {
 	
 	}
 
-	public void entEmail(String email) {
+	public void entEmail(String email) throws InterruptedException {
+		
 		
 		ut.setText(enterEmail, email);
 		utility.screenshot();
-		
+		Thread.sleep(3000);
 		ut.click(createAcc);
 		utility.screenshot();
 		
@@ -100,13 +101,13 @@ public class Registration extends RootClass {
 
 	public void enterDet(String first, String last, String password) throws InterruptedException {
 		
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		ut.setText(fname, first);
 		utility.screenshot();
 		Thread.sleep(2000);
 		System.out.println("last name enter"+last);
-		//ut.setText(lname, last);
-		lname.sendKeys("mlname");
+		ut.setText(lname, last);
+		//lname.sendKeys("mlname");
 		utility.screenshot();
 		ut.setText(passwd, password);
 		utility.screenshot();
@@ -142,7 +143,7 @@ public class Registration extends RootClass {
 		
 		String loginName = ut.getText(username);
 		//String loginName ="Faded Short Sleeve T-shirts initial";
-		String input = fname2+lname2;
+		String input = fname2+" "+lname2;
 		System.out.println("Username input: " + input);
 		utility.screenshot();
 		

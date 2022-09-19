@@ -34,7 +34,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 19, 2022 05:17:25 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 19, 2022 06:33:10 PM</span>
 				</a>
 			</li>
 			<li>
@@ -74,8 +73,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -137,10 +134,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='40%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -152,10 +149,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='40%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -170,17 +167,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Test My AutomationPractice website</span>
-						<span class='test-time'>Sep 19, 2022 05:17:25 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Sep 19, 2022 06:33:10 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 19, 2022 05:17:25 PM</span>
-	<span class='label end-time'>Sep 19, 2022 05:18:50 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 24s+622ms</span>
+	<span class='label start-time'>Sep 19, 2022 06:33:10 PM</span>
+	<span class='label end-time'>Sep 19, 2022 06:34:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 2s+432ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -189,11 +186,11 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  fail' status='fail' test-id='2'>
+				<li class='node level-1  pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Scenario Outline: Purchase An Item from List</h5>
-						<span class='test-status right fail'>fail</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 1m 24s+612ms</span>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 2s+423ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -208,7 +205,7 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>5:17:25 PM</td>
+													<td class='timestamp'>6:33:10 PM</td>
 													<td class='step-details'><table><tr><td>url</td><td>email</td><td>password</td></tr><tr><td>https://automationpractice.com/index.php</td><td>test123const@test.com</td><td>12345</td></tr></table></td>
 												</tr>
 										</tbody>
@@ -216,11 +213,11 @@
 								</div>
 						</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2  fail' status='fail' test-id='3'>
+				<li class='node level-2  pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Scenario: Purchase An Item from List</h5>
-						<span class='test-status right fail'>fail</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 1m 24s+589ms</span>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 2s+399ms</span>
 								<span class='category label white-text'>@myAutomationPractice</span>
 								<span class='category label white-text'>@PurchaseItem</span>
 					</div>
@@ -229,7 +226,7 @@
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Given I enter the website url in the webpage"https://automationpractice.com/index.php"</h5>
 						<span class='test-status right pass'>pass</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 26s+633ms</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 15s+387ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -244,7 +241,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:17:56 PM</td>
+													<td class='timestamp'>6:33:29 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -256,7 +253,7 @@
 					<div class='collapsible-header'>
 						<h5 class='node-name'>When I enter the website email id "test123const@test.com" and password "12345"</h5>
 						<span class='test-status right pass'>pass</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 30s+669ms</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+760ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -271,7 +268,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:18:27 PM</td>
+													<td class='timestamp'>6:33:42 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -279,11 +276,11 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf fail' status='fail' test-id='6'>
+				<li class='node level-3 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>And I add item to the cart</h5>
-						<span class='test-status right fail'>fail</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 23s+177ms</span>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+540ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -296,47 +293,21 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>5:18:50 PM</td>
-													<td class='step-details'><textarea>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-5Q4IR8MI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [94c24a4ddb2afcd7718465ad6f4f993c, clickElement {id=a388255b-a72d-4902-b3fd-96774949cb11}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ganes\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50631/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (94c24a4ddb2afcd7718465ad6f4f993c)] -> xpath: //a[@title='Proceed to checkout']]
-Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at pageObject.PurchaseItem.addProd(PurchaseItem.java:88)
-	at stepDefinition.SD_PurchaseItem.i_add_item_to_the_cart(SD_PurchaseItem.java:32)
-	at ✽.And I add item to the cart(cucumberJava.feature:37)
-</textarea></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:34:00 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='7'>
+				<li class='node level-3 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>And I navigate to purchase page</h5>
-						<span class='test-status right skip'>skip</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+420ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -349,21 +320,21 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>5:18:50 PM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:34:12 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='8'>
+				<li class='node level-3 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I verify the added product</h5>
-						<span class='test-status right skip'>skip</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+8ms</span>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+51ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -376,10 +347,10 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>5:18:50 PM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:34:12 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
@@ -447,13 +418,13 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 					<div class='category-heading'>
 						<span class='category-name'>@myAutomationPractice</span>
 						<span class='category-status right'>
-							<span class='label fail'>2</span>
+							<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -468,14 +439,14 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 19, 2022 05:17:25 PM</td>
+										<td>Sep 19, 2022 06:33:10 PM</td>
 										<td class='linked' test-id='1'>Test My AutomationPractice website</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 19, 2022 05:17:25 PM</td>
+										<td>Sep 19, 2022 06:33:10 PM</td>
 										<td class='linked' test-id='3'>Test My AutomationPractice website.Scenario Outline: Purchase An Item from List.Scenario: Purchase An Item from List</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -486,13 +457,13 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 					<div class='category-heading'>
 						<span class='category-name'>@PurchaseItem</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -507,9 +478,9 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 19, 2022 05:17:25 PM</td>
+										<td>Sep 19, 2022 06:33:10 PM</td>
 										<td class='linked' test-id='3'>Test My AutomationPractice website.Scenario Outline: Purchase An Item from List.Scenario: Purchase An Item from List</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -528,93 +499,6 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Sep 19, 2022 05:18:27 PM</td>
-                                                        <td class='linked' test-id='6'>Test My AutomationPractice website.Scenario Outline: Purchase An Item from List.Scenario: Purchase An Item from List.And I add item to the cart</td>
-                                                        <td><pre><textarea>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-5Q4IR8MI', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [94c24a4ddb2afcd7718465ad6f4f993c, clickElement {id=a388255b-a72d-4902-b3fd-96774949cb11}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ganes\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50631/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (94c24a4ddb2afcd7718465ad6f4f993c)] -> xpath: //a[@title='Proceed to checkout']]
-Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at pageObject.PurchaseItem.addProd(PurchaseItem.java:88)
-	at stepDefinition.SD_PurchaseItem.i_add_item_to_the_cart(SD_PurchaseItem.java:32)
-	at ✽.And I add item to the cart(cucumberJava.feature:37)
-</textarea></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -636,19 +520,19 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 19, 2022 05:17:25 PM</div>
+					<div class='panel-lead'>Sep 19, 2022 06:33:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 19, 2022 05:18:50 PM</div>
+			 		<div class='panel-lead'>Sep 19, 2022 06:34:13 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>85,368ms</div>
+					<div class='panel-lead'>62,912ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -664,14 +548,14 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 						</tr>
 						<tr>
 							<td>@myAutomationPractice</td>
-							<td>0</td>
 							<td>2</td>
+							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>@PurchaseItem</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -687,22 +571,22 @@ Session ID: 94c24a4ddb2afcd7718465ad6f4f993c
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 1,
+				passParent: 5,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 2,
-				exceptionsParent: 3,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 2,
-				failChild: 1,
+				passChild: 5,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 2,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

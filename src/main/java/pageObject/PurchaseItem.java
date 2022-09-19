@@ -73,7 +73,7 @@ public class PurchaseItem extends RootClass {
 		
 		ut.click(women);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,300)", "");
+		js.executeScript("window.scrollBy(0,350)", "");
 		
 		Actions action = new Actions(driver);
 		
